@@ -29,10 +29,15 @@ function activate(context) {
         sncmder.PushRecord();
     });
 
+    var disposableEval = vscode.commands.registerCommand('extension.snEval', function () {
+        sncmder.evalScript();
+    });
+
     context.subscriptions.push(disposableInit);
     context.subscriptions.push(disposableRebuild);
     context.subscriptions.push(disposablePull);
     context.subscriptions.push(disposablePush);
+    context.subscriptions.push(disposableEval);
 }
 exports.activate = activate;
 

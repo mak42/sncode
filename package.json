@@ -1,60 +1,69 @@
 {
-    "name": "sncmder",
-    "displayName": "sncmder",
-    "description": "vscode extension for service-now development",
-    "version": "0.0.1",
-    "publisher": "mak",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/mak42/sncmder"
-    },
-    "license": "MIT",
-    "engines": {
-        "vscode": "^1.14.0"
-    },
-    "categories": [
-        "Other"
-    ],
-    "activationEvents": [
-        "onCommand:extension.snInit",
-        "workspaceContains:config.json"
-    ],
-    "main": "./extension",
-    "contributes": {
-        "commands": [
-            {
-                "command": "extension.snInit",
-                "title": "SN-Editor: Init"
-            },
-            {
-                "command": "extension.snPull",
-                "title": "SN-Editor: Pull"
-            },
-            {
-                "command": "extension.snPush",
-                "title": "SN-Editor: Push"
-            },
-            {
-                "command": "extension.snRebuild",
-                "title": "SN-Editor: Rebuild"
-            }
-        ]
-    },
-    "dependencies": {
-        "jsonfile": "^2.4.0",
-        "querystring": "0.2.0",
-        "shelljs": "^0.7.5"
-    },
-    "scripts": {
-        "postinstall": "node ./node_modules/vscode/bin/install",
-        "test": "node ./node_modules/vscode/bin/test"
-    },
-    "devDependencies": {
-        "typescript": "^2.0.3",
-        "vscode": "^1.0.0",
-        "mocha": "^2.3.3",
-        "eslint": "^3.6.0",
-        "@types/node": "^6.0.40",
-        "@types/mocha": "^2.2.32"
-    }
+  "name": "sncmder",
+  "displayName": "sncmder",
+  "description": "vscode extension for service-now development",
+  "version": "0.0.1",
+  "publisher": "mak",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mak42/sncmder"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.14.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:extension.snInit",
+    "workspaceContains:config.json"
+  ],
+  "main": "./extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.snInit",
+        "title": "sncmder init"
+      },
+      {
+        "command": "extension.snPull",
+        "title": "sncmder pull"
+      },
+      {
+        "command": "extension.snPush",
+        "title": "sncmder push"
+      },
+      {
+        "command": "extension.snEval",
+        "title": "sncmder eval"
+      },
+      {
+        "command": "extension.snRebuild",
+        "title": "sncmder rebuild"
+      }
+    ]
+  },
+  "dependencies": {
+    "html2plaintext": "^1.1.1",
+    "jsonfile": "^2.4.0",
+    "promise": "^7.1.1",
+    "querystring": "0.2.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1",
+    "shelljs": "^0.7.5",
+    "xml2js": "^0.4.17"
+  },
+  "scripts": {
+    "postinstall": "node ./node_modules/vscode/bin/install",
+    "test": "node ./node_modules/vscode/bin/test"
+  },
+  "devDependencies": {
+    "typescript": "^2.0.3",
+    "vscode": "^1.0.0",
+    "mocha": "^2.3.3",
+    "eslint": "^3.6.0",
+    "@types/node": "^6.0.40",
+    "@types/mocha": "^2.2.32"
+  }
 }
