@@ -33,11 +33,16 @@ function activate(context) {
         sncmder.evalScript();
     });
 
+    var disposableDebugger = vscode.commands.registerCommand('extension.snDebugger', function () {
+        sncmder.openDebugger();
+    });
+
     context.subscriptions.push(disposableInit);
     context.subscriptions.push(disposableRebuild);
     context.subscriptions.push(disposablePull);
     context.subscriptions.push(disposablePush);
     context.subscriptions.push(disposableEval);
+    context.subscriptions.push(disposableDebugger);
 }
 exports.activate = activate;
 

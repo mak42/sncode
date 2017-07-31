@@ -39,6 +39,10 @@
         "title": "sncmder eval"
       },
       {
+        "command": "extension.snDebugger",
+        "title": "sncmder debugger"
+      },
+      {
         "command": "extension.snRebuild",
         "title": "sncmder rebuild"
       }
@@ -47,6 +51,7 @@
   "dependencies": {
     "html2plaintext": "^1.1.1",
     "jsonfile": "^2.4.0",
+    "opn": "^5.1.0",
     "promise": "^7.1.1",
     "querystring": "0.2.0",
     "request": "^2.81.0",
