@@ -4,6 +4,11 @@
     "description": "vscode extension for service-now development",
     "version": "0.0.1",
     "publisher": "mak",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mak42/sncmder"
+    },
+    "license": "MIT",
     "engines": {
         "vscode": "^1.14.0"
     },
@@ -11,14 +16,34 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.snInit",
+        "workspaceContains:config.json"
     ],
     "main": "./extension",
     "contributes": {
-        "commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
-        }]
+        "commands": [
+            {
+                "command": "extension.snInit",
+                "title": "SN-Editor: Init"
+            },
+            {
+                "command": "extension.snPull",
+                "title": "SN-Editor: Pull"
+            },
+            {
+                "command": "extension.snPush",
+                "title": "SN-Editor: Push"
+            },
+            {
+                "command": "extension.snRebuild",
+                "title": "SN-Editor: Rebuild"
+            }
+        ]
+    },
+    "dependencies": {
+        "jsonfile": "^2.4.0",
+        "querystring": "0.2.0",
+        "shelljs": "^0.7.5"
     },
     "scripts": {
         "postinstall": "node ./node_modules/vscode/bin/install",

@@ -1,0 +1,171 @@
+{
+    "business_rules": {
+        "name": "business_rules",
+        "table": "sys_script",
+        "key": "name",
+        "fields": {
+            "js": "script"
+        },
+        "subDirPattern": "collection/when"
+    },
+    "client_scripts": {
+        "name": "client_scripts",
+        "table": "sys_script_client",
+        "key": "name",
+        "fields": {
+            "js": "script"
+        },
+        "subDirPattern": "table/type"
+    },
+    "email_scripts": {
+        "name": "email_scripts",
+        "table": "sys_script_email",
+        "key": "name",
+        "fields": {
+            "js": "script"
+        }
+    },
+    "inbound_actions": {
+        "name": "inbound_actions",
+        "table": "sysevent_in_email_action",
+        "key": "name",
+        "fields": {
+            "js": "script"
+        }
+    },
+    "processors": {
+        "name": "processors",
+        "table": "sys_processor",
+        "key": "name",
+        "fields": {
+            "js": "script"
+        }
+    },
+    "script_actions": {
+        "name": "script_actions",
+        "table": "sysevent_script_action",
+        "key": "name",
+        "fields": {
+            "js": "script"
+        },
+        "subDirPattern": "event_name"
+    },
+    "script_includes": {
+        "name": "script_includes",
+        "table": "sys_script_include",
+        "key": "name",
+        "fields": {
+            "js": "script"
+        },
+        "subDirPattern": "client_<client_callable>"
+    },
+    "style_sheets": {
+        "name": "style_sheets",
+        "table": "content_css",
+        "key": "name",
+        "fields": {
+            "css": "style"
+        }
+    },
+    "ui_actions": {
+        "name": "ui_actions",
+        "table": "sys_ui_action",
+        "key": "name",
+        "fields": {
+            "js": "script"
+        },
+        "subDirPattern": "table/client_<client>"
+    },
+    "ui_macros": {
+        "name": "ui_macros",
+        "table": "sys_ui_macro",
+        "key": "name",
+        "fields": {
+            "xhtml": "xml"
+        },
+        "subDirPattern": "category"
+    },
+    "ui_pages": {
+        "name": "ui_pages",
+        "table": "sys_ui_page",
+        "key": "name",
+        "fields": {
+            "xhtml": "html",
+            "client.js": "client_script",
+            "server.js": "processing_script"
+        }
+    },
+    "ui_scripts": {
+        "name": "ui_scripts",
+        "table": "sys_ui_script",
+        "key": "name",
+        "fields": {
+            "js": "script"
+        }
+    },
+    "dynamic_content_blocks": {
+        "name": "dynamic_content_blocks",
+        "table": "content_block_programmatic",
+        "key": "name",
+        "fields": {
+            "xhtml": "programmatic_content"
+        },
+        "subDirPattern": "category"
+    },
+    "email_templates": {
+        "name": "email_templates",
+        "table": "sysevent_email_template",
+        "key": "name",
+        "fields": {
+            "html": "message_html"
+        },
+        "subDirPattern": "collection"
+    },
+    "fix_scripts": {
+        "name": "fix_scripts",
+        "table": "sys_script_fix",
+        "key": "name",
+        "fields": {
+            "js": "script"
+        }
+    },
+    "catalog_client_scripts": {
+        "name": "catalog_client_scripts",
+        "table": "catalog_script_client",
+        "key": "name",
+        "fields": {
+            "js": "script"
+        },
+        "subDirPattern": "applies_to_<applies_to>/type"
+    },
+    "sys_web_service": {
+        "name": "sys_web_service",
+        "table": "sys_web_service",
+        "key": "name",
+        "fields": {
+            "js": "script"
+        }
+    },
+    "web_service_resources": {
+        "name": "web_service_resources",
+        "table": "sys_ws_operation",
+        "key": "name",
+        "fields": {
+            "js": "operation_script"
+        },
+        "subDirPattern": "web_service_definition"
+    },
+    "widgets": {
+        "name": "widgets",
+        "table": "sp_widget",
+        "key": "name",
+        "fields": {
+            "client.js": "client_script",
+            "demo.js": "demo_data",
+            "server.js": "script",
+            "html": "template",
+            "scss": "scss"
+        },
+        "subDirPattern": "name"
+    }
+}
