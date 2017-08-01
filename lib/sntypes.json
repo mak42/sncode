@@ -6,7 +6,7 @@
         "fields": {
             "js": "script"
         },
-        "subDirPattern": "collection/when"
+        "subDirPattern": "collection"
     },
     "client_scripts": {
         "name": "client_scripts",
@@ -15,7 +15,7 @@
         "fields": {
             "js": "script"
         },
-        "subDirPattern": "table/type"
+        "subDirPattern": "table"
     },
     "email_scripts": {
         "name": "email_scripts",
@@ -56,8 +56,7 @@
         "key": "name",
         "fields": {
             "js": "script"
-        },
-        "subDirPattern": "client_<client_callable>"
+        }
     },
     "style_sheets": {
         "name": "style_sheets",
@@ -74,7 +73,7 @@
         "fields": {
             "js": "script"
         },
-        "subDirPattern": "table/client_<client>"
+        "subDirPattern": "table"
     },
     "ui_macros": {
         "name": "ui_macros",
@@ -82,15 +81,14 @@
         "key": "name",
         "fields": {
             "xhtml": "xml"
-        },
-        "subDirPattern": "category"
+        }
     },
     "ui_pages": {
         "name": "ui_pages",
         "table": "sys_ui_page",
         "key": "name",
         "fields": {
-            "xhtml": "html",
+            "html": "html",
             "client.js": "client_script",
             "server.js": "processing_script"
         }
@@ -108,9 +106,8 @@
         "table": "content_block_programmatic",
         "key": "name",
         "fields": {
-            "xhtml": "programmatic_content"
-        },
-        "subDirPattern": "category"
+            "html": "programmatic_content"
+        }
     },
     "email_templates": {
         "name": "email_templates",
